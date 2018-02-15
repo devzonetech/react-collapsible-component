@@ -1,6 +1,6 @@
 .accordion-head {
-    background-color: #eee;
-    color: #444;
+    background-color: #34afc7;
+    color: white;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -11,7 +11,7 @@
 }
 
 .active-accordion, .accordion-head:hover {
-    background-color: #ccc;
+    background-color: #0485a0;
 }
 
 .panel-accordion {

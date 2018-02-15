@@ -6,10 +6,10 @@ class CollapsibleContent extends React.Component {
     constructor() {
         super()
     }
-    
+
     render() {
         return (
-            <div class={'panel-accordion ' + this.props.className}>
+            <div class={' panel-accordion ' + this.props.className} style={this.props.isExpanded ? {display: 'block'} : null}>
                 {this.props.children}
             </div>)
     }
@@ -17,10 +17,12 @@ class CollapsibleContent extends React.Component {
 
 CollapsibleContent.propTypes = {
     className: PropTypes.string,
+    isExpanded: PropTypes.bool,
 }
 
 CollapsibleContent.defaultProps = {
     className: '',
+    isExpanded: false,
 }
 
 export default CollapsibleContent

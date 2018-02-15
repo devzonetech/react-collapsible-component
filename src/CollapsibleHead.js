@@ -8,7 +8,7 @@ class CollapsibleHead extends React.Component {
     }
     
     render() {
-        return (<button className={'accordion-head ' + this.props.className}>
+        return (<button className={'accordion-head ' + (this.props.isExpanded ? 'active-accordion ' : '') + this.props.className}>
             {this.props.children}
         </button>)
     }
@@ -16,10 +16,12 @@ class CollapsibleHead extends React.Component {
 
 CollapsibleHead.propTypes = {
     className: PropTypes.string,
+    isExpanded: PropTypes.bool,
 }
 
 CollapsibleHead.defaultProps = {
     className: '',
+    isExpanded: false,
 }
 
 export default CollapsibleHead
