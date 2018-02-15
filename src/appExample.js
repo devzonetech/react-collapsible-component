@@ -3,7 +3,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import {CollapsibleComponent, CollapsibleHead, CollapsibleContent} from '../dist/index'
+import {CollapsibleComponent, CollapsibleHead, CollapsibleContent} from './components_export'
 
 class CollapsibleComponentExamples extends React.Component {
     
