@@ -1,5 +1,5 @@
 import React from 'react'
-import '!style-loader!css-loader!./css/styles.css'
+import '!style-loader!css-loader!../css/styles.css'
 
 class CollapsibleComponent extends React.Component {
     
