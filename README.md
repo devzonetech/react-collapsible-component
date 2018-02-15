@@ -65,7 +65,7 @@ export default class MyComponent extends React.Component {
 | *Prop*          | *Default* | *Values*                                   | Description                            |
 |-----------------|-----------|--------------------------------------------|----------------------------------------|
 | className       |           | String                                     | custom defined css class               |
-| isExpanded      | false     | Boolean: true or false                     | Show or hide the component.            |
+| isExpanded      | false     | Boolean: true or false                     | Show or hide collapsible content.      |
  
 
 ## License
