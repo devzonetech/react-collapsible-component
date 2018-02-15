@@ -1,8 +1,8 @@
 'use strict';
 
-import CollapsibleComponent from './components_export.js';
-import CollapsibleHead from './components_export.js';
-import CollapsibleContent from './components_export.js';
+var CollapsibleComponent = require("./CollapsibleComponent.js");
+var CollapsibleHead = require("./CollapsibleHead.js");
+var CollapsibleContent = require("./CollapsibleContent.js");
 
 module.exports.CollapsibleComponent = CollapsibleComponent;
 module.exports.CollapsibleHead = CollapsibleHead;
