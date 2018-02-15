@@ -1,6 +1,6 @@
 {
   "name": "react-collapsible-component",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "ReactJs collapsible accordion component. Light, simple and functional. Allows expand and collapse HTML content. Ready for use in your ReactJs application.",
   "main": "index.js",
   "scripts": {
