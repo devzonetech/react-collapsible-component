@@ -9,7 +9,7 @@ class CollapsibleContent extends React.Component {
 
     render() {
         return (
-            <div class={' panel-accordion ' + this.props.className} style={this.props.isExpanded ? {display: 'block'} : null}>
+            <div className={' panel-accordion ' + this.props.className} style={this.props.isExpanded ? {display: 'block'} : null}>
                 {this.props.children}
             </div>)
     }
