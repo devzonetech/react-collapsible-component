@@ -4,7 +4,9 @@
   "description": "ReactJs collapsible accordion component. Light, simple and functional. Allows expand and collapse HTML content. Ready for use in your ReactJs application.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./",
+    "pretest": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -34,7 +36,9 @@
     "react-dom": "^16.2.0"
   },
   "devDependencies": {
+    "ajv": "^6.1.1",
     "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
     "babel-loader": "^7.1.2",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-env": "^1.6.1",
@@ -43,8 +47,6 @@
     "css-loader": "^0.28.9",
     "eslint": "^4.17.0",
     "eslint-plugin-react": "^7.6.1",
-    "less": "^3.0.0",
-    "less-loader": "^4.0.5",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.20.1",

@@ -7,7 +7,6 @@
 
 var webpack = require('webpack')
 var path = require('path')
-var CleanWebpackPlugin = require('clean-webpack-plugin')
 
 var BUILD_DIR = path.resolve(__dirname, 'dist')
 var APP_DIR = path.resolve(__dirname, './src/')
@@ -16,7 +15,7 @@ var config = {
     devtool:'sourcemaps',
     cache: true,
     entry: {
-        ReactCollapsibleComponent: APP_DIR + '/ReactCollapsibleComponent.js',
+        index: APP_DIR + '/index.js',
         appExample: APP_DIR + '/appExample.js',
     },
     output: {
@@ -59,11 +58,7 @@ var config = {
             sourceMap: false,
             // Don't beautify output (enable for neater output)
             beautify: false,
-        }),
-        new CleanWebpackPlugin([BUILD_DIR], {
-            root: __dirname,
-            verbose: true,
-            dry: false})
+        })
     ]
 }
 
