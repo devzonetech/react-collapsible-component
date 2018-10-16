@@ -48,7 +48,7 @@
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.11.1",
     "hoek": "^5.0.4",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.9.4",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "webpack": "^3.12.0"
