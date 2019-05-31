@@ -66,7 +66,11 @@ export default class MyComponent extends React.Component {
 |-----------------|-----------|--------------------------------------------|----------------------------------------|
 | className       |           | String                                     | custom defined css class               |
 | isExpanded      | false     | Boolean: true or false                     | Show or hide collapsible content.      |
- 
+
+## Example compile command
+Run from base project directory:
+
+    node node_modules/webpack/bin/webpack.js --config webpack.config.js
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
