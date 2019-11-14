@@ -15,7 +15,7 @@ var config = {
     devtool:'sourcemaps',
     cache: true,
     entry: {
-        appExample: APP_DIR + '/appExample.js',
+        appExample: APP_DIR + '/appExample.js'
     },
     output: {
         path: BUILD_DIR,
