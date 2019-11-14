@@ -15,6 +15,7 @@ var config = {
     devtool:'sourcemaps',
     cache: true,
     entry: {
+        components_export: APP_DIR + '/components_export.js',
         appExample: APP_DIR + '/appExample.js'
     },
     output: {
