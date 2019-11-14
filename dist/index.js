@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./components_export.js');
+module.exports = require('../src/components_export');

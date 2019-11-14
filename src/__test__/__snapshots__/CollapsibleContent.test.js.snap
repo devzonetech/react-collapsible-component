@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CollapsibleContent snapshot renders 1`] = `
+<div
+  className=" panel-accordion "
+  style={null}
+/>
+`;
