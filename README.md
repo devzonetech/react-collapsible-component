@@ -4,7 +4,7 @@ ReactJs collapsible accordion component. Light, simple and functional. Allows ex
 
 ## Demo
 
-[https://www.devzonetech.com/demo/react-collapsible-component/](https://www.devzonetech.com/demo/react-collapsible-component/demo/public/)
+[https://www.devzonetech.com/demo/react-collapsible-component/](https://www.devzonetech.com/demo/react-collapsible-component/)
 
 ## Installation
 
