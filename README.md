@@ -187,6 +187,8 @@ export default class MyComponent extends React.Component {
 | className  |           | no                                             | String                 | Custom defined css class          |
 | name       |           | if more than one conponent on one page is used | String                 | Qunique name identifier           |
 | isExpanded | false     | no                                             | Boolean: true or false | Show or hide collapsible content. |
+| showContentAboveButton | false     | no                                             | Boolean: true or false | Show collapsible content above Head title. |
+
 
 ## License
 
