@@ -1,28 +1,16 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
-class CollapsibleContent extends React.Component {
+export class CollapsibleContent extends React.Component {
     
-    constructor() {
-        super()
-    }
-
     render() {
+
+        const { className } = this.props;
+        let addClassName = className ? className : '';
+
         return (
-            <div className={' panel-accordion ' + this.props.className} style={this.props.isExpanded ? {display: 'block'} : null}>
+            <div className={' panel-accordion ' + addClassName}
+                style={this.props.isExpanded ? {display: 'block'} : null}>
                 {this.props.children}
             </div>)
     }
 }
-
-CollapsibleContent.propTypes = {
-    className: PropTypes.string,
-    isExpanded: PropTypes.bool,
-}
-
-CollapsibleContent.defaultProps = {
-    className: '',
-    isExpanded: false,
-}
-
-export default CollapsibleContent

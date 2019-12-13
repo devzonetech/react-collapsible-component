@@ -12,11 +12,9 @@ var BUILD_DIR = path.resolve(__dirname, 'dist')
 var APP_DIR = path.resolve(__dirname, './src/')
 
 var config = {
-    devtool:'sourcemaps',
     cache: true,
     entry: {
-        components_export: APP_DIR + '/components_export.js',
-        appExample: APP_DIR + '/appExample.js'
+        index: APP_DIR + '/index.js',
     },
     output: {
         path: BUILD_DIR,
@@ -27,8 +25,9 @@ var config = {
     resolve: {
         extensions: ['.js', '.jsx']
     },
+    mode: 'production',
     module : {
-        loaders: [
+        rules: [
             {
                 test: /(\.scss|\.css)$/,
                 loaders: [
@@ -38,28 +37,35 @@ var config = {
                 ]
             },
             {
-                test: path.join(__dirname, '.'),
-                exclude: /(node_modules)/,
+                test: /\.js[x]?$/,
                 loader: 'babel-loader',
-                query: { presets:['env', 'stage-0', 'react' ], plugins:['add-module-exports']}
+                exclude: /node_modules/,
+                query: {
+                    cacheDirectory: true,
+                    presets: [ '@babel/preset-env' ],
+                    plugins: [ '@babel/transform-runtime', '@babel/transform-regenerator' ]
+                }
             },
         ],
     },
-    plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false,
-                // Drop `console` statements
-                drop_console: true
-            },
-            output: {
-                comments: false,
-            },
-            sourceMap: false,
-            // Don't beautify output (enable for neater output)
-            beautify: false,
-        })
-    ]
+    optimization: {
+        minimize: true
+    },
+    externals: {
+        // Don't bundle react or react-dom
+        react: {
+            commonjs: "react",
+            commonjs2: "react",
+            amd: "React",
+            root: "React"
+        },
+        "react-dom": {
+            commonjs: "react-dom",
+            commonjs2: "react-dom",
+            amd: "ReactDOM",
+            root: "ReactDOM"
+        }
+    }
 }
 
 module.exports = config
