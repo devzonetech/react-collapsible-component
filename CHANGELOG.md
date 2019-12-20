@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 
 
+## [1.3.3] - 2019-12-20
+### Changed
+- Readme file updated.
+- Added npm information
+- PeerDependencies versioning improvement
+
 ## [1.3.0] - 2019-12-13
 ### Changed
 - [#1](https://github.com/devzonetech/react-collapsible-component/issues/1) Putting Head below Content
