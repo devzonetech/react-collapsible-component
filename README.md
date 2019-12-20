@@ -197,3 +197,7 @@ export default class MyComponent extends React.Component {
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 [DEVZONE TECH Ltd.](https://www.devzonetech.com/)
+
+[npm-url]: https://npmjs.org/package/react-collapsible-component
+[downloads-image]: http://img.shields.io/npm/dm/react-collapsible-component.svg
+[npm-image]: https://badge.fury.io/js/react-collapsible-component.svg
