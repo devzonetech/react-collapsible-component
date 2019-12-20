@@ -3,7 +3,6 @@
  * https://www.devzonetech.com/
  */
 
-var webpack = require('webpack')
 var path = require('path')
 
 var BUILD_DIR = path.resolve(__dirname, 'dist')
