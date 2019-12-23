@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "86a4de72db6db7ab823d18e1b75431f5",
+    "revision": "f52e6c2e80981ec4f890a86f1e38a4bb",
     "url": "/demo/react-collapsible-component/index.html"
   },
   {
