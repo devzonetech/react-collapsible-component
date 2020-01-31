@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.3.4] - 2020-01-31
+### Changed
+Dependencies updated.
+
+### Fix
+-  clicking on <CollapsibleContent> it triggers form submit event #2 
 
 ## [1.3.3] - 2019-12-20
 ### Changed
