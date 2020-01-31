@@ -11,7 +11,9 @@ export class CollapsibleComponent extends React.Component {
         let i;
 
         for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener('click', function() {
+            acc[i].addEventListener('click', function(e) {
+               e.preventDefault();
+
                 /* Highlight the button - add/remove "active-accordion" class */
                 this.classList.toggle('active-accordion')
 
