@@ -42,8 +42,6 @@ test("CollapsibleContent expand test", () => {
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
 
-    console.log(tree.props);
-
     const expandStyle = null;
     expect(tree.props.style).toEqual(expandStyle);
 });
