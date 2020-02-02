@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CollapsibleContent expand test 1`] = `
+<div
+  className=" panel-accordion additionalClassForContent"
+  style={null}
+>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  </p>
+</div>
+`;
+
+exports[`CollapsibleContent render and class property, children type test 1`] = `
+<div
+  className=" panel-accordion additionalClassForContent"
+  style={
+    Object {
+      "display": "block",
+    }
+  }
+>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  </p>
+</div>
+`;
