@@ -1,0 +1,28 @@
+--- 
+  stages: 
+    - install
+    - build
+    - test
+    - deploy
+
+  deploy: 
+    only: 
+      - master
+    script: 
+      - "echo \"Deploy to production\""
+    stage: deploy
+    when: manual
+    
+  install: 
+    only: 
+      - master
+    script: 
+      - "npm install"
+    stage: test
+
+  test: 
+    only: 
+      - master
+    script: 
+      - "npm run test"
+    stage: test
